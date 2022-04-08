@@ -1,0 +1,5 @@
+1. churrasco
+2. pizza
+3. hambúrguer
+4. cerveja
+5. sushi
