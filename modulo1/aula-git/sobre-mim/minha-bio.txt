@@ -1,0 +1,4 @@
+Meu nome é Alessandro Silvino, tenho 26 anos e nasci em Sobral, interior do Ceará. Sou Engenheiro Civil por formação mas minha paixão por 
+programação sempre esteve presente em minha vida, desde o ensino fundamental, onde participei de várias edições da Olimpíada Brasileira de 
+Informática e aprendi C++. Sou uma pessoa curiosa, que se interessa por vários assuntos e gosta muito de tomar uma cerveja enquanto conversa
+sobre esses assuntos com os amigos. 
