@@ -155,6 +155,13 @@ console.log(cond1)
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+  const cond1 = ano%400 === 0
+  const cond2 = ano%4 === 0 
+  const 
+  const condFinal = cond1 && cond2
+  
+  return condFinal
+
 
 }
 
