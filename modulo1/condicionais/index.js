@@ -108,9 +108,9 @@ global do programa, apenas dentro do bloco do condicional.*/
 //1ª QUESTÃO--------------------------------------------------------------------------
 // let generoDoFilme = prompt("Qual o gênero do filme?")
 // let precoDoIngresso = Number(prompt("Qual o valor do ingresso?"))
-// let lanchinho = prompt("Qual snack você quer comprar?")
 
 // if (generoDoFilme.toLowerCase()==="fantasia" && precoDoIngresso<=15) {
+//     let lanchinho = prompt("Qual snack você quer comprar?")
 //     console.log(`Bom filme!
 //     Aproveite seu/sua ${lanchinho}!`)
 // } else { 
