@@ -99,3 +99,59 @@
 // }
   
 // console.log(`O maior valor é: ${maiorValor} e o menor valor é: ${menorValor}`)
+
+//DESAFIOS----------------------------------------------------------------------------------------------------
+//1)
+// let numeroEscolhido = Number(prompt("Digite o número escolhido"))
+// console.log("Vamos jogar!")
+// let tentativas = 0
+
+// let palpite = Number(prompt("Digite um palpite"))
+
+// while (palpite !== numeroEscolhido) {
+//     if (palpite < numeroEscolhido) {
+//         tentativas +=1
+//         console.log(`O seu palpite foi ${palpite} mas o número escolhido é maior`)
+//         palpite = Number(prompt("Digite outro palpite"))
+//     } else {
+//         tentativas += 1
+//         console.log(`O seu palpite foi ${palpite} mas o número escolhido é menor`)
+//         palpite = Number(prompt("Digite outro palpite"))
+//     } 
+// }
+// if (palpite === numeroEscolhido) {
+//     tentativas += 1
+//     console.log(`O seu palpite foi ${palpite}.
+//     Parabéns! Você acertou com ${tentativas} tentativas`)
+// }
+
+//2)----------------------------------------------------------------------------------------------------------
+
+// function numeroAleatorio(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min)) + min;
+//   }
+
+// let numeroEscolhido = numeroAleatorio (1,100)
+// console.log("Vamos jogar!")
+// let tentativas = 0
+
+// let palpite = Number(prompt("Digite um palpite"))
+
+// while (palpite !== numeroEscolhido) {
+//     if (palpite < numeroEscolhido) {
+//         tentativas +=1
+//         console.log(`O seu palpite foi ${palpite} mas o número escolhido é maior`)
+//         palpite = Number(prompt("Digite outro palpite"))
+//     } else {
+//         tentativas += 1
+//         console.log(`O seu palpite foi ${palpite} mas o número escolhido é menor`)
+//         palpite = Number(prompt("Digite outro palpite"))
+//     } 
+// }
+// if (palpite === numeroEscolhido) {
+//     tentativas += 1
+//     console.log(`O seu palpite foi ${palpite}.
+//     Parabéns! Você acertou com ${tentativas} tentativas`)
+// }
