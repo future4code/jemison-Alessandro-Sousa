@@ -106,35 +106,66 @@ function retornaSegundoMaiorESegundoMenor(array) {
 }
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
+    let pessoaAnonima = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+
+    return pessoaAnonima
    
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+
+    const pessoasAutorizadas = pessoas.filter ((pessoa) => {
+    return (pessoa.idade > 14) && (pessoa.idade < 60) && (pessoa.altura > 1.5)
+    })
+    
+    return pessoasAutorizadas
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
+
+    const pessoasNaoAutorizadas = pessoas.filter ((pessoa) => {
+    return (pessoa.idade <= 14) || (pessoa.idade >= 60) || (pessoa.altura < 1.5)
+        })
+        
+    return pessoasNaoAutorizadas
   
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+    return contas.map(item => {
+    const {cliente, saldoTotal, compras} = item
+    const valorCompra = compras.reduce((acc, item) => acc + item)
 
+    return {cliente, saldoTotal: saldoTotal - valorCompra, compras: []}
+})
 }
+
+
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+    consultas.sort((a, b) => {
+        return (a.nome > b.nome) ? 1 : ((b.nome > a.nome) ? -1 : 0)
+    })
+
+    return consultas
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+
+    
    
 }
