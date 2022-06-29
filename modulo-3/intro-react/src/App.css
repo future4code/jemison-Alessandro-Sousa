@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  align-items: center;
+}
+
+div {
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Foto-Perfil {
+  width: 30vw;
+}
+
+a {
+  margin: 10px;
+}
