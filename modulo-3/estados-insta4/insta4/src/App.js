@@ -8,14 +8,39 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+
+const posts = [
+  {
+    nomeUsuario: "Alessandro",
+    fotoUsuario: "https://picsum.photos/50/50",
+    fotoPost: "https://picsum.photos/200/150"
+  },
+  {
+    nomeUsuario: "Jerry",
+    fotoUsuario: "https://picsum.photos/50/50",
+    fotoPost: "https://picsum.photos/200/150"
+  },
+  {
+    nomeUsuario: "Abel",
+    fotoUsuario: "https://picsum.photos/50/50",
+    fotoPost: "https://picsum.photos/200/150"
+  }
+
+]
+
 function App() {
 return(
   <MainContainer>
-           <Post
-            nomeUsuario={'paulinha'}
-            fotoUsuario={'https://picsum.photos/50/50'}
-            fotoPost={'https://picsum.photos/200/150'}
-          />
+    {posts.map((post) => {
+      return (
+      <Post
+        nomeUsuario={post.nomeUsuario}
+        fotoUsuario={post.fotoUsuario}
+        fotoPost={post.fotoUsuario}
+      />)
+    })}
+    
+   
         </MainContainer>
 )
 

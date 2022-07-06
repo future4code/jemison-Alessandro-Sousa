@@ -48,19 +48,30 @@ function Post(props){
     numeroComentarios: 0
   })
 
-  const [numeroCurtidas, setnumeroCurtidas] = useState (0)
+  const [numeroCurtidas, setnumeroCurtidas] = useState(0)
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
   const [numeroComentarios, setNumeroComentarios] = useState(0)
+  const [comentario, setComentario] = useState('')
 
   const onClickCurtida = () => {
-    console.log('Curtiu!')
+    setCurtido(!curtido) 
+    if (curtido) {
+      setnumeroCurtidas(numeroCurtidas - 1)
+    } else {
+      setnumeroCurtidas(numeroCurtidas + 1)
+    }
   }
   
   const onClickComentario = () => {
     setComentando(!comentando)
     if(comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
+      componenteComentario = 
+      <SecaoComentario 
+       comentario={comentario} 
+       onChangeComentario={(event) => setComentario(event.target.value)} 
+       aoEnviar={aoEnviarComentario}
+      />
     }
     console.log(comentando)
   }
@@ -97,7 +108,7 @@ function Post(props){
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
-          valorContador={state.numeroCurtidas}
+          valorContador={numeroCurtidas}
         />
 
         <IconeComContador
