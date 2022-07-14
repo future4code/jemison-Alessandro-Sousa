@@ -1,0 +1,41 @@
+.formData fieldset {
+  width: 100%;
+  padding: 14px;
+}
+
+.formData fieldset legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lineForm {
+  display: flex;
+  gap: 10px;
+}
+
+.formData input {
+  flex: 1;
+  background: #121214;
+  padding: 10px;
+  border-radius: 8px;
+  color: #e1e1e6;
+  line-height: 1.4;
+}
+
+.formData button[type=submit] {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: #00875f;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.formData button[type=submit]:hover {
+  background: #00B37E;
+}
