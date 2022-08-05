@@ -1,0 +1,90 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  padding: 15px 30px;
+
+  gap: 20px;
+}
+
+.container img {
+  width: 350px;
+  height: 450px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px 8px;
+  width: 350px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  bottom: 0;
+  left: 1;
+}
+
+.profileInfo span {
+  color: #d8d8d8
+}
+
+.buttons {
+  max-width: 100px;
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.unLike {
+  color: #F75A68;
+}
+
+.like {
+  color: #00B37E;
+}
+
+.isMatch {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.isMatch strong {
+  font-size: 25px;
+  color: #FFF;
+}

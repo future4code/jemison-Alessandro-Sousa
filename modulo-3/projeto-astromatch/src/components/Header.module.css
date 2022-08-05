@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  padding: 15px 8px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #ccd1d1;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.prefix {
+  color: #00CCC0;
+}
+
+.sufix {
+  color: #5611bb;
+}
+
+.header button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+}
