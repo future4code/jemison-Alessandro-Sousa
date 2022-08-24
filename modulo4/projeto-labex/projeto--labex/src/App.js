@@ -1,7 +1,6 @@
 import React from 'react';
-import Router from './components/Router';
+import Router from './components/Router'
 
-// PASSO 2: CHAMAR O COMPONENTE DE ROTAS
 function App() {
   return (
     <Router />

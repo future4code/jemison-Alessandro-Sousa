@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "5729d6d9-c2ba-4806-afcb-cbcba49bce0c",
+		"name": "Labex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22375156"
+	},
+	"item": [
+		{
+			"name": "Populate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "alessandro-silvino-jemison",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labeX/alessandro-silvino-jemison/populate",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labeX",
+						"alessandro-silvino-jemison",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
