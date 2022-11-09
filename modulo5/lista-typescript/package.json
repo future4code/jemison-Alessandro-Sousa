@@ -1,0 +1,24 @@
+{
+  "name": "lista-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "exc1":"tsc && node ./build/exc1.js",
+    "exc2":"tsc && node ./build/exc2.js",
+    "exc3":"tsc && node ./build/exc3.js",
+    "exc4":"tsc && node ./build/exc4.js",
+    "exc5":"tsc && node ./build/exc5.js",
+    "exc6":"tsc && node ./build/exc6.js",
+    "exc7":"tsc && node ./build/exc7.js",
+    "exc8":"tsc && node ./build/exc8.js",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
